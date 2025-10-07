@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ikram's Portfolio</title>
+    <!--<link rel="stylesheet" href="aboutme.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  
+  <style>
+
+        * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #f4e9dc; 
+    color: #4b2e2b;
+}
+
+.homelink {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 15px;
+    background-color: #4b2e2b;
+    z-index: 1000;
+}
+
+a.home {
+    background-color: #6b3f3a;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a.home:hover {
+    background-color: white;
+    color: #6b3f3a;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background-color: #fffaf3;
+    margin: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+}
+
+.myimage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #f1dec3;
+    box-shadow: 4px 7px 20px #a37c76;
+    transition: all 0.4s ease;
+}
+
+.myimage:hover {
+    transform: scale(1.05);
+    box-shadow: 6px 9px 25px;
+}
+
+.myimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.description {
+    text-align: center;
+    max-width: 700px;
+}
+
+.description h1 {
+    color: #4b2e2b;
+    margin-bottom: 8px;
+    transition: all 0.3s;
+}
+
+.description h1:hover{
+    color: #9e5548;
+    transform: translateY(-3px);
+}
+.description h2 {
+    color: #6b3f3a;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.description p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4b2e2b;
+    transition: all 0.4s;
+}
+.description p:hover{
+    color: #b6685a;
+    transform: translateY(-3px);
+}
+
+.readmorebtn {
+    background-color: #d4a373;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.readmorebtn:hover {
+    background-color: white;
+    color: #d4a373;
+    border: 1px solid #d4a373;
+}
+
+@media(min-width: 1024px) {
+    .main {
+        height: 100vh; 
+        padding: 30px; 
+        padding-top: 0px;
+        gap: 60px; 
+        flex-direction: row; 
+        justify-content: space-around; 
+        align-items: center; 
+    }
+
+    .description {
+        max-width: 900px;
+        text-align: left;
+    }
+
+    .myimage {
+        width: 200px;
+        height: 200px;
+    }
+
+    .description h1 {
+        font-size: 3rem;
+    }
+
+    .description h2 {
+        font-size: 2.0rem;
+    }
+
+    .description p {
+        font-size: 1.0rem;
+    }
+
+    .readmorebtn {
+        padding: 20px 40px;
+        font-size: 1.0rem;
+    }
+}
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="homelink divtop">
+        <a class="home" href="home.html">Home</a>
+    </div>
+
+    <div class="main">
+        <div class="myimage">
+            <img src="Asset/images (2).jpeg" alt="Ikram Mensur">
+        </div>
+
+        <div class="description">
+            <h1>About Me</h1>
+            <h2>Frontend Developer</h2>
+            <p>
+                
+                Hello, I’m Ikram Mensur. I specialize in frontend development and enjoy designing 
+                websites that combine functionality with creativity. My journey in web development 
+                started with a curiosity for how websites work, which quickly grew into a strong 
+                passion for coding and design. Over time, I’ve gained experience with HTML, CSS, 
+                JavaScript, and other modern tools, and I’m always eager to learn new technologies 
+                that improve the user experience.  
+            </p>
+
+            <p>
+                Beyond coding, I value problem-solving, teamwork, and continuous growth. 
+                My vision is to create websites and applications that...  
+            </p>
+
+            <button class="readmorebtn">Read More</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
